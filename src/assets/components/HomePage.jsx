@@ -1,5 +1,6 @@
 import BrandLine from './BrandLine'
 import DressStyle from './DressStyle.jsx'
+import Footer from './Footer.jsx'
 import Hero from './Hero'
 import NewArrivals from './NewArrivals/NewArrivals.jsx'
 import TopSelling from './TopSelling/TopSelling.jsx'
@@ -12,6 +13,7 @@ export default function HomePage() {
     <NewArrivals />
     <TopSelling />
     <DressStyle />
+    <Footer />
     </>
   )
 }
