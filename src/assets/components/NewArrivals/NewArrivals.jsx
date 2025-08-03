@@ -8,7 +8,7 @@ export default function NewArrivals() {
     <section className='max-w-screen-2xl mx-auto px-32 py-20'>
         <div className='flex flex-col justify-center items-center gap-10'>
             <h1 className='font-CF text-5xl'>NEW ARRIVALS</h1>
-            <div className={`flex justify-center flex-wrap overflow-hidden h-96 ${isActive ? 'overflow-visible h-full' : ''}`}>
+            <div className={`flex justify-center items-center flex-wrap overflow-hidden h-96 ${isActive ? 'overflow-visible h-full' : ''}`}>
                 {
                     ArrivalDatas.map((data , i) => {
                         return <div key={i} className='h-96 w-72'>
