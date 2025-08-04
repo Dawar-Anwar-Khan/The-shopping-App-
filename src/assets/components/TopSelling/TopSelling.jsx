@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import tshirt from '../../images/t-shirt.svg'
 import TopSellings from './topSelling'
+import { NavLink } from 'react-router'
 
 export default function TopSelling() {
     const [isActive , setIsActive] = useState(false)
@@ -13,7 +14,7 @@ export default function TopSelling() {
                         TopSellings.map((data , i) => {
                             return <div key={i} className='h-96 w-72'>
                         <div className='bg-[#f2f0f1] h-60 w-60 rounded-2xl overflow-hidden'>
-                            <img className='object-contain' src={tshirt} alt="" />
+                            <NavLink to={`/productdetails`}><img className='object-contain' src={tshirt} alt="" /></NavLink>
                         </div>
                         <p className='mb-3 mt-2  font-bold font-satoshi'>
                             {data.type}
