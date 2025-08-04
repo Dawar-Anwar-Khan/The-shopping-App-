@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import HomePage from "./assets/components/HomePage.jsx";
+import ProductDetailPage from "./assets/components/productD/ProductDetailPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />
+      },
+      {
+        path: "/productdetails",
+        element: <ProductDetailPage />
       },
     ]
   },
