@@ -6,7 +6,7 @@ import github from '../images/github.svg'
 export default function Footer() {
   return (
     <section className='max-w-screen-2xl mx-auto px-32 py-20 bg-[#f2f0f1]'>
-            <div className='flex gap-12'>
+            <div className='flex justify-center gap-12 max-w-screen-2xl'>
                 <div className=''>
                     <h1 className='text-4xl font-CF'>SHOP.CO</h1>
                     <p className='mt-4 text-gray-500'>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
