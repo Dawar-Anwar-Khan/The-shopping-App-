@@ -18,11 +18,33 @@ export default function Header() {
   const menuItems = ['Shop', 'On Sale', 'New Arrivals', 'Brands']
 
   return (
-    <div className="max-w-screen-2xl mx-auto shadow-lg relative">
+    <div className="max-w-screen-2xl mx-auto shadow-lg sticky top-0 bg-white">
       <div className="flex justify-between lg:justify-around py-8 px-4 lg:px-16 items-center">
-        {/* Logo */}
-        <div>
-          <h1 className="font-CF text-2xl lg:text-4xl">SHOP.CO</h1>
+        <div className='flex gap-3'>
+          <button
+            onClick={toggleMenu}
+            className="lg:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1 focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            <span 
+              className={`block w-6 h-0.5 bg-black transition-all duration-300 ${
+                isMenuOpen ? 'rotate-45 translate-y-2' : ''
+              }`}
+            ></span>
+            <span 
+              className={`block w-6 h-0.5 bg-black transition-all duration-300 ${
+                isMenuOpen ? 'opacity-0' : ''
+              }`}
+            ></span>
+            <span 
+              className={`block w-6 h-0.5 bg-black transition-all duration-300 ${
+                isMenuOpen ? '-rotate-45 -translate-y-2' : ''
+              }`}
+            ></span>
+          </button>
+          <div>
+          <h1 className="font-CF text-3xl lg:text-4xl">SHOP.CO</h1>
+        </div>
         </div>
 
         {/* Desktop Navigation */}
@@ -62,28 +84,7 @@ export default function Header() {
             <img src={profile} alt="profile" className="cursor-pointer hover:opacity-70 transition-opacity" />
           </div>
 
-          {/* Hamburger Menu Button */}
-          <button
-            onClick={toggleMenu}
-            className="lg:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1 focus:outline-none"
-            aria-label="Toggle menu"
-          >
-            <span 
-              className={`block w-6 h-0.5 bg-black transition-all duration-300 ${
-                isMenuOpen ? 'rotate-45 translate-y-2' : ''
-              }`}
-            ></span>
-            <span 
-              className={`block w-6 h-0.5 bg-black transition-all duration-300 ${
-                isMenuOpen ? 'opacity-0' : ''
-              }`}
-            ></span>
-            <span 
-              className={`block w-6 h-0.5 bg-black transition-all duration-300 ${
-                isMenuOpen ? '-rotate-45 -translate-y-2' : ''
-              }`}
-            ></span>
-          </button>
+          
         </div>
       </div>
 

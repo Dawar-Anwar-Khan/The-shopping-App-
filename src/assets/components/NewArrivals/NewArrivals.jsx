@@ -6,9 +6,9 @@ import { NavLink } from 'react-router'
 export default function NewArrivals() {
     const [isActive , setIsActive] = useState(false)
   return (
-    <section className='max-w-screen-2xl mx-auto px-32 py-20'>
+    <section className='max-w-screen-2xl mx-auto px-5 lg:px-32 py-10 lg:py-20'>
         <div className='flex flex-col justify-center items-center gap-10'>
-            <h1 className='font-CF text-5xl'>NEW ARRIVALS</h1>
+            <h1 className='font-CF text-3xl lg:text-5xl'>NEW ARRIVALS</h1>
             <div className={`flex justify-center items-center flex-wrap overflow-hidden h-96 ${isActive ? 'overflow-visible h-full' : ''}`}>
                 {
                     ArrivalDatas.map((data , i) => {
