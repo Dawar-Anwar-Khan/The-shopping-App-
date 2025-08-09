@@ -65,7 +65,7 @@ export default function Footer() {
             </div>
 
             {/* Resources Section - Full width on mobile, inline on larger screens */}
-            <div className='mt-8 lg:mt-0 lg:absolute lg:right-4 lg:top-1/2 lg:transform lg:-translate-y-1/2'>
+            <div className='mt-8'>
                 <div className='md:grid md:grid-cols-2 lg:block'>
                     <div className='md:col-span-1'>
                         <h3 className='font-bold font-satoshi text-sm sm:text-base mb-4 sm:mb-6 tracking-wider'>RESOURCES</h3>
