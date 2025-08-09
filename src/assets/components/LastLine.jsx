@@ -6,7 +6,7 @@ import gpay from '../images/gpay.svg'
 
 export default function LastLine() {
   return (
-    <section className='max-w-screen-2xl mx-auto px-32 pb-20 bg-[#f2f0f1]'>
+    <section className='max-w-screen-2xl mx-auto px-5 lg:px-32 pb-20 bg-[#f2f0f1]'>
         <div className='flex justify-between items-center'>
             <ul className='flex'> 
                 <li><img src={visa} alt="" /></li>
