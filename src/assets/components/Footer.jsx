@@ -10,7 +10,7 @@ export default function Footer() {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12'>
                 {/* Company Info Section */}
                 <div className='lg:col-span-2'>
-                    <h1 className='text-2xl sm:text-3xl lg:text-4xl font-CF mb-4'>SHOP.CO</h1>
+                    <h1 className='text-4xl font-CF mb-4'>SHOP.CO</h1>
                     <p className='text-gray-500 text-sm sm:text-base mb-6 max-w-sm'>
                         We have clothes that suits your style and which you're proud to wear. From women to men.
                     </p>

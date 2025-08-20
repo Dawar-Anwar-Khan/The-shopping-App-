@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Cart from "../images/Cart.svg"
 import profile from "../images/profile.svg"
 import search from "../images/Vector.png"
+import { NavLink } from 'react-router'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -19,7 +20,7 @@ export default function Header() {
 
   return (
     <div className="max-w-screen-2xl mx-auto shadow-lg sticky top-0 bg-white">
-      <div className="flex justify-between lg:justify-around py-8 px-4 lg:px-16 items-center">
+      <div className="flex justify-between lg:justify-around py-5 px-4 lg:px-16 items-center">
         <div className='flex gap-3'>
           <button
             onClick={toggleMenu}
@@ -51,9 +52,9 @@ export default function Header() {
         <div className="hidden lg:block">
           <ul className="flex gap-8 cursor-pointer">
             {menuItems.map((item) => (
-              <li key={item} className="hover:text-gray-600 transition-colors">
+              <NavLink to={`/productdetails`} key={item} className="hover:text-gray-600 transition-colors">
                 {item}
-              </li>
+              </NavLink>
             ))}
           </ul>
         </div>
@@ -116,12 +117,11 @@ export default function Header() {
         <nav className="px-4 pb-4 bg-white">
           <ul className="space-y-4">
             {menuItems.map((item) => (
-              <li 
+              <li
                 key={item}
                 className="py-2 px-4 hover:bg-gray-50 rounded-lg cursor-pointer transition-colors"
-                onClick={() => setIsMenuOpen(false)}
               >
-                {item}
+                <NavLink to={`/productdetails`} onClick={() => setIsMenuOpen(false)}>{item}</NavLink>
               </li>
             ))}
           </ul>

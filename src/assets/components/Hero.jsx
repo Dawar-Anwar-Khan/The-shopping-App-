@@ -1,5 +1,6 @@
 import React from 'react'
 import picture from "../images/Rectangle.svg"
+import { NavLink } from 'react-router'
 
 export default function Hero() {
   return (
@@ -14,7 +15,7 @@ export default function Hero() {
                     Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
                 </p>
                 <button className='mb-8 sm:mb-10 lg:mb-5 rounded-full bg-black text-white w-full sm:w-fit px-8 sm:px-12 py-3 sm:py-2 text-sm sm:text-base font-medium hover:bg-gray-800 transition-colors'>
-                    Shop Now
+                    <NavLink to={`/productdetails`}>Shop Now</NavLink>
                 </button>
                 
                 {/* Stats Section */}
