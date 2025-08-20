@@ -9,10 +9,10 @@ export default function TopSelling() {
     <section className='max-w-screen-2xl mx-auto px-5 lg:px-32 py-10 lg:py-20'>
             <div className='flex flex-col justify-center items-center gap-10'>
                 <h1 className='font-CF text-3xl lg:text-5xl'>TOP SELLING</h1>
-                <div className={`flex justify-center items-center flex-wrap overflow-hidden h-96 ${isActive ? 'overflow-visible h-full' : ''}`}>
+                <div className={`flex justify-center items-center flex-wrap overflow-hidden h-80 ${isActive ? 'overflow-visible h-full' : ''}`}>
                     {
                         TopSellings.map((data , i) => {
-                            return <div key={i} className='h-96 w-72'>
+                            return <div key={i} className='h-80 w-72'>
                         <div className='bg-[#f2f0f1] h-60 w-60 rounded-2xl overflow-hidden'>
                             <NavLink to={`/productdetails`}><img className='object-contain' src={tshirt} alt="" /></NavLink>
                         </div>
