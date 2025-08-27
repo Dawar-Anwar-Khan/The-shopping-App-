@@ -10,6 +10,7 @@ export default function Header() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
+  
   }
 
   const toggleSearch = () => {
