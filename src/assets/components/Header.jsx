@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import Cart from "../images/Cart.svg"
-import profile from "../images/profile.svg"
 import search from "../images/Vector.png"
 import { NavLink } from 'react-router'
+import { IoCartOutline } from "react-icons/io5";
+import { CgProfile } from "react-icons/cg";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -82,8 +82,8 @@ export default function Header() {
 
           {/* Cart and Profile Icons */}
           <div className="flex gap-4">
-            <img src={Cart} alt="cart" className="cursor-pointer hover:opacity-70 transition-opacity" />
-            <img src={profile} alt="profile" className="cursor-pointer hover:opacity-70 transition-opacity" />
+            <IoCartOutline className='cursor-pointer hover:opacity-70 transition-opacity h-6 w-6' ></IoCartOutline>
+            <CgProfile className='cursor-pointer hover:opacity-70 transition-opacity h-6 w-6'></CgProfile>
           </div>
 
           
