@@ -13,7 +13,7 @@ export default function NewArrivals() {
             {/* Mobile horizontal scroll */}
             <div className={`lg:hidden flex gap-4 overflow-x-auto w-full pb-4 ${isActive ? 'flex-wrap overflow-visible' : ''}`} 
                  style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-                <style jsx>{`
+                <style>{`
                     div::-webkit-scrollbar {
                         display: none;
                     }
