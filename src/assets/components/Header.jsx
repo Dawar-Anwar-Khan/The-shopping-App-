@@ -20,7 +20,7 @@ export default function Header() {
   const menuItems = ['Shop', 'On Sale', 'New Arrivals', 'Brands']
 
   return (
-    <div className="max-w-screen-2xl mx-auto shadow-lg sticky top-0 bg-white z-50">
+    <div className="max-w-screen-2xl mx-auto shadow-lg sticky top-0 bg-white">
       <div className="flex justify-between lg:justify-around py-5 px-4 lg:px-16 items-center">
         <div className='flex gap-3'>
           <button

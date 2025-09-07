@@ -13,7 +13,7 @@ export default function Hero() {
         />
         
         {/* Content Overlay */}
-        <div className='relative z-10 h-full min-h-screen lg:min-h-[600px] flex items-center'>
+        <div className='relative h-full min-h-screen lg:min-h-[600px] flex items-center'>
             <div className='px-4 sm:px-8 md:px-16 lg:px-32 py-8 sm:py-12 md:py-16 lg:py-20'>
                 <h1 className='text-5xl lg:text-6xl xl:text-7xl mb-4 sm:mb-6 lg:mb-5 font-CF leading-tight text-black  drop-shadow-lg'>
                     FIND CLOTHES THAT MATCHES YOUR STYLE
