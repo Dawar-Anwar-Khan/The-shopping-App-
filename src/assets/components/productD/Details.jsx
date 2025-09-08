@@ -5,7 +5,7 @@ export default function Details() {
     <section>
         <div>
             <div>
-                <div></div>
+                <div>new details.</div>
                 <div></div>
                 <div></div>
             </div>
